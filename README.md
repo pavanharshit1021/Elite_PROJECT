@@ -1,88 +1,59 @@
-Task Manager App
+# Task Manager Application
 
-Overview
+## Overview
+This is a React-based Task Manager application that allows users to manage tasks efficiently. It includes features like task creation, editing, deletion, searching, sorting, and categorization. The app also supports theme customization (light/dark mode) and allows users to pick their preferred theme color.
 
-This is a simple React-based task management application that allows users to add, edit, delete, and search tasks. The app provides categorization based on task priority and due dates while offering a dark/light mode and customizable theme colors.
+## Features
+- Add new tasks with title, description, due date, and priority levels (High, Medium, Low).
+- Edit and update tasks.
+- Delete tasks.
+- Mark tasks as completed.
+- Search tasks by keyword.
+- Categorize tasks as Upcoming, Overdue, or Completed.
+- Sort tasks by priority.
+- Theme customization (light/dark mode) and custom theme colors.
 
-Features
+## Technologies Used
+- React.js
+- Axios (for API requests)
+- CSS for styling
 
-Add new tasks with title, description, due date, and priority.
+## Installation & Setup
 
-Edit existing tasks.
-
-Delete tasks.
-
-Search tasks by title or description.
-
-Mark tasks as completed or pending.
-
-Categorize tasks as upcoming, overdue, or completed.
-
-Sort tasks based on priority.
-
-Dark mode and light mode toggle.
-
-Customizable theme colors.
-
-Technologies Used
-
-React.js
-
-Axios (for API requests)
-
-CSS for styling
-
-Installation
-
-Prerequisites
-
+### Prerequisites
 Ensure you have the following installed:
+- Node.js
+- npm or yarn
 
-Node.js
+### Steps
+1. Clone the repository:
+   ```sh
+   git clone https://github.com/your-repo/task-manager.git
+   cd task-manager
+   ```
+2. Install dependencies:
+   ```sh
+   npm install
+   ```
+3. Start the application:
+   ```sh
+   npm start
+   ```
+4. The application will run on `http://localhost:3000/`.
 
-npm (comes with Node.js) or yarn
+## Backend API
+This application relies on a backend API for managing tasks. The assumed API endpoints are:
+- `GET /tasks` - Fetch all tasks.
+- `POST /tasks` - Add a new task.
+- `DELETE /tasks/:id` - Delete a task.
+- `PUT /tasks/:id` - Update a task.
+- `GET /tasks/search?query=xyz` - Search tasks by keyword.
 
-Steps
+Ensure that the backend server is running on `http://localhost:5000/`.
 
-Clone the repository:
+## Customization
+- Modify the theme colors in the `themeColor` state variable in `App.js`.
+- Adjust styles in `App.css`.
 
-git clone https://github.com/your-username/task-manager.git
-cd task-manager
-
-Install dependencies:
-
-npm install
-
-Start the development server:
-
-npm start
-
-The app will be available at http://localhost:3000/.
-
-Backend API
-
-The app expects a backend running at http://localhost:5000/. Ensure you have a RESTful API set up with the following endpoints:
-
-GET /tasks - Fetch all tasks
-
-POST /tasks - Create a new task
-
-DELETE /tasks/:id - Delete a task
-
-PUT /tasks/:id - Update a task
-
-GET /tasks/search?query=keyword - Search tasks
-
-Customization
-
-Theme Colors: You can choose from predefined theme colors.
-
-Dark Mode: Toggle between light and dark mode.
-
-Future Improvements
-
-Add user authentication.
-
-Implement drag-and-drop task sorting.
-
-Add notifications/reminders.
+## License
+This project is open-source and available under the MIT License.
