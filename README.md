@@ -17,6 +17,9 @@ This is a React-based Task Manager application that allows users to manage tasks
 - React.js
 - Axios (for API requests)
 - CSS for styling
+- Express (for backend server)
+- CORS
+- Body-parser
 
 ## Installation & Setup
 
@@ -25,17 +28,31 @@ Ensure you have the following installed:
 - Node.js
 - npm or yarn
 
-### Steps
-1. Clone the repository:
+### Backend Setup
+1. Initialize the backend:
    ```sh
-   git clone https://github.com/your-repo/task-manager.git
+   npm init -y
+   ```
+2. Install dependencies:
+   ```sh
+   npm install express cors body-parser
+   ```
+3. Run the backend server inside `Elite_PROJECT`:
+   ```sh
+   node server.js
+   ```
+
+### Frontend Setup
+1. Create the React app:
+   ```sh
+   npx create-react-app task-manager
    cd task-manager
    ```
 2. Install dependencies:
    ```sh
-   npm install
+   npm install axios
    ```
-3. Start the application:
+3. Start the frontend application inside `task-manager`:
    ```sh
    npm start
    ```
